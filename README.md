@@ -29,6 +29,8 @@
 
     ```bash
     pip install ensta
+    ```
+    ```
     brew install ffmpeg
     ```
 
