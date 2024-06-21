@@ -18,21 +18,21 @@
 
 ## Installation
 
-1. Clone this repository:
-
-    ```bash
-    git clone https://github.com/hirbod03/AutoInstaUnfollow.git
-    cd AutoInstaUnfollow
-    ```
+1. Clone this repository
 
 2. Install the required libraries:
 
     ```bash
     pip install ensta
     ```
-    ```
+    ```bash
     brew install ffmpeg
     ```
+
+## Prerequisites
+
+- Ensure you have the appropriate prerequisites for the `ensta` library. Refer to the [[link](https://github.com/diezo/Ensta)] for detailed information.
+- Turn off two-factor authentication on your Instagram account.
 
 ## Usage
 
@@ -53,7 +53,6 @@
 ## Contributing
 
 If you have any ideas, suggestions, or improvements, feel free to open an issue or submit a pull request.
-
 
 ## Acknowledgments
 
