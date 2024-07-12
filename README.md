@@ -2,14 +2,15 @@
 
 ## Overview
 
-**AutoInstaUnfollow** is a Python script that helps manage your Instagram followings by automatically unfollowing users who don't follow you back. This script utilizes the `ensta` library to interact with the Instagram API and streamline the process of maintaining a more balanced follower-following ratio.
+**AutoInstaUnfollow** is a Python script that helps manage your Instagram followings by automatically unfollowing users who don't follow you back. This script utilizes the `Web` class from the Ensta library to interact with the Instagram API and streamline the process of maintaining a more balanced follower-following ratio.
 
 ## Features
 
 - Fetches the list of users you follow and your followers.
 - Identifies users who don't follow you back.
-- Automatically unfollows users who don't follow you back.
-- Simple and efficient code, ideal for personal use.
+- Provides options to automatically unfollow users who don't follow you back, print their usernames, or take no action.
+- Simple and efficient code, ideal for educational purposes.
+
 
 ## Requirements
 
@@ -23,32 +24,33 @@
 2. Install the required libraries:
 
     ```bash
-    pip install ensta
+    brew install ensta
     ```
     ```bash
     brew install ffmpeg
     ```
 
-## Prerequisites
+- ## Prerequisites
 
-- Ensure you have the appropriate prerequisites for the `ensta` library. Refer to the [[link](https://github.com/diezo/Ensta)] for detailed information.
-- Turn off two-factor authentication on your Instagram account.
+- Ensure you have the appropriate prerequisites for the Ensta library. Refer to the [Ensta library documentation]([#](https://github.com/diezo/Ensta)) for detailed information.
+- Turn off two-factor authentication on your Instagram account if not handled by the script.
 
 ## Usage
 
-1. Open the `igtrack.py` script and replace `"USERNAME"` and `"PASSWORD"` with your Instagram username and password.
+1. Open the `AutoUnfollower.py` script and replace `username` and `password` with your Instagram username and password.
 2. Run the script:
 
     ```bash
-    python igtrack.py
+    python AutoUnfollower.py
     ```
 
-3. The script will output the progress and automatically unfollow users who don't follow you back.
+3. The script will output the progress and provide options to unfollow users who don't follow you back, print their usernames, or take no action.
 
-## Notes
+## Cautions
 
-- Use this script responsibly and be aware of Instagram's rate limits and policies.
-- Ensure that you have the necessary permissions and comply with Instagram's terms of service.
+- **Use this script responsibly**: Be aware of Instagram's rate limits and policies regarding automation.
+- **Personal Accounts**: Using your personal account with automation scripts can lead to your account being flagged or banned. It is recommended to use a secondary account for testing purposes.
+- **Educational Purposes**: This script is intended for educational purposes only. Please comply with Instagram's terms of service and use the script at your own risk.
 
 ## Contributing
 
@@ -56,4 +58,4 @@ If you have any ideas, suggestions, or improvements, feel free to open an issue 
 
 ## Acknowledgments
 
-- Thanks to the creators of the `ensta` library for providing a simple way to interact with the Instagram API.
+- Thanks to the creators of the Ensta library and its dependencies for providing a way to interact with the Instagram API.
