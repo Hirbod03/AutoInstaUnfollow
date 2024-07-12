@@ -1,13 +1,23 @@
 import csv
 from ensta import Mobile 
 
-mobile = Mobile("USERNAME", "PASSWORD")
+username = ""
+password = ""
 
-followers = mobile.followers("USERNAME")
-followings = mobile.followings("USERNAME")
+mobile = 0
+
+try:
+    mobile = Mobile(username, password)
+except Exception as e:
+    print("Login failed. Please check your credentials.")
+    print(f"Error details: {e}")
+    exit()
+
+followers = mobile.followers(username)
+followings = mobile.followings(username)
 
 # Fetching next chunk
-followers = mobile.followers("USERNAME", next_cursor=followers.next_cursor)
+followers = mobile.followers(username, next_cursor=followers.next_cursor)
 
 # Convert followers and followings to sets for faster lookup
 followers_usernames = set(follower.username for follower in followers.list)
