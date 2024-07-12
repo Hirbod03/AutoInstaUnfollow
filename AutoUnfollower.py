@@ -1,13 +1,12 @@
 import csv
-from ensta import Web 
+from ensta import Mobile, Web 
 
 # Your Instagram username
-loginUsername = "joeblack8299" 
+loginUsername = "INSTAGRAM_USERNAME" 
 # Your Instagram password
-password = "LLJSuMvD7nJsF3V" 
-
+password = "INSTAGRAM_PASSWORD"
 # Username of the account whose followers and followings you want to check
-username = "hirbodhs" 
+username = "INSTAGRAM_USERNAME"
 
 web = None
 
@@ -35,7 +34,6 @@ print("1: Unfollow them")
 print("2: Print their usernames")
 print("3: Do nothing")
 
-
 # Ask the user for their choice
 user_choice = input("Enter your choice (1, 2, or 3): ")
 if user_choice == '1':
@@ -47,7 +45,7 @@ elif user_choice == '2':
     # Print usernames of users who don't follow back
     print("Users who don't follow back:")
     for user in non_followers:
-        print(user)
+        print(user.username)
 elif user_choice == '3':
     # Do nothing
     print("No action taken.")
