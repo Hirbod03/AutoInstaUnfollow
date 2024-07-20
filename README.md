@@ -37,13 +37,12 @@
 
 ## Usage
 
-1. Open the `AutoUnfollower.py` script and replace `username` and `password` with your Instagram username and password.
-2. Run the script:
+1. Run the script:
 
     ```bash
     python AutoUnfollower.py
     ```
-
+2. Enter instagram credientials when prompted.
 3. The script will output the progress and provide options to unfollow users who don't follow you back, print their usernames, or take no action.
 
 ## Cautions

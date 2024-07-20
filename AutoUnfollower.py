@@ -1,12 +1,12 @@
 import csv
-from ensta import Mobile, Web 
+from ensta import Web 
 
 # Your Instagram username
-loginUsername = "INSTAGRAM_USERNAME" 
+loginUsername = input("Enter login username: ") 
 # Your Instagram password
-password = "INSTAGRAM_PASSWORD"
+password = input("Enter password: ")
 # Username of the account whose followers and followings you want to check
-username = "INSTAGRAM_USERNAME"
+username = input("Enter the username of the account you want to check: ")
 
 web = None
 
