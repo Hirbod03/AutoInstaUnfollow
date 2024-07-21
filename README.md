@@ -1,7 +1,5 @@
 # AutoInstaUnfollow 
 ![insta](https://github.com/user-attachments/assets/69b6cae4-1880-4a85-bff6-e06ecbcf5e9b)
-
-
 ## Overview
 
 **AutoInstaUnfollow** is a Python script that helps manage your Instagram followings by automatically unfollowing users who don't follow you back. This script utilizes the `Web` class from the Ensta library to interact with the Instagram API and streamline the process of maintaining a more balanced follower-following ratio.
